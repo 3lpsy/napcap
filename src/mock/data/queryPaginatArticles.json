@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Mock Title 1",
+            "subTitle": "Let's mock a tile",
+            "reads": "100",
+            "slug": "slug",
+            "publishedAt": {
+                "date": "2016-10-04",
+                "diffForHumans": "2 days ago"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Mock Title 2",
+            "subTitle": "Let's mock a tile",
+            "reads": "100",
+            "slug": "slug",
+            "publishedAt": {
+                "date": "2016-10-01",
+                "diffForHumans": "3 days ago"
+            }
+        }
+        {
+            "id": 3,
+            "title": "Mock Title 3",
+            "subTitle": "Let's mock a tile",
+            "reads": "100",
+            "slug": "slug",
+            "publishedAt": {
+                "date": "2016-09-01",
+                "diffForHumans": "9 days ago"
+            }
+        }
+        {
+            "id": 4,
+            "title": "Mock Title 3",
+            "subTitle": "Let's mock a title",
+            "reads": "100",
+            "slug": "slug",
+            "publishedAt": {
+                "date": "2016-09-21",
+                "diffForHumans": "10 days ago"
+            }
+        }
+    ],
+    "meta": {
+
+    }
+
+}
