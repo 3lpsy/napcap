@@ -11,7 +11,6 @@ module.exports = {
   format: 'umd',
   plugins: [
     replace({ __VERSION__: version }),
-    buble(),
     nodeResolve({
         jsnext: true,
         main: true,

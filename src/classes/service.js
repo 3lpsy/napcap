@@ -11,23 +11,22 @@ export default class Service {
         this.axios = new Factory(config).getInstance();
     }
 
-    index(options) {
-        console.log(options);
+    index(options = {}) {
         let route = this.routes.index;
         let url = route.url(options.params);
         return this.axios.get(url, {params: options.query})
     }
 
-    show(options) {
+    show(options = {}) {
         let route = this.routes.show;
         let url = route.url(options.params);
         return this.axios.get(url, {params: options.query})
     }
 
-    store(params, data, query) {
+    store(options = {}) {
         let route = this.routes.store;
-        let url = route.url(params);
-        return this.axios.post(url, {data}, {params: query})
+        let url = route.url(options.params);
+        return this.axios.post(url, {data: options.data}, {params: options.query})
     }
 
     update(params, data, query) {

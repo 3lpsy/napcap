@@ -18,6 +18,12 @@ export default class Api {
         return service;
     }
 
+    addRoute(route, key, method) {
+        this.requiresService(key);
+        let service = this.getService(key);
+        service.addRoute(method, route);
+    }
+
     addResource(resource, key) {
         this.requiresService(key);
         let service = this.getService(key);
