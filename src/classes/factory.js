@@ -17,11 +17,11 @@ const defaultConfig = {
 const interceptors = {
     response: {
         success: (response) => {
-            console.log(response);
+            console.log(response.status, response);
             return response;
         },
         error: (error) => {
-            console.log("API ERROR");
+            console.log(error.response.status, error.response);
             return Promise.reject(error);
         }
     }
@@ -32,7 +32,10 @@ export default class Factory {
     constructor(config = {}) {
         this.config = Object.assign(defaultConfig, config);
         this.axios = Axios.create(this.config);
-        this.axios.interceptors.response.use(interceptors.response.success, interceptors.response.error);
+        this.axios.interceptors.response.use(
+            interceptors.response.success,
+            interceptors.response.error
+        );
     }
 
     getInstance() {
