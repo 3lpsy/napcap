@@ -12,7 +12,7 @@
     "build": "webpack -p --config build/webpack.dev.conf.js"
   },
   "dependencies": {
-    "axios": "^0.15.2",
+    "axios": "^0.19.0",
     "eslint-plugin-html": "^2.0.0",
     "js-cookie": "^2.1.3"
   },
